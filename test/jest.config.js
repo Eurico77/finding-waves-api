@@ -1,11 +1,11 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-undef */
-import { resolve } from 'path';
+const { resolve } = require('path');
 const root = resolve(__dirname, '..');
-const rootConfig = `${root}/jest.config.js`;
+const rootConfig = require(`${root}/jest.config.js`);
 
 module.exports = {
-  ...rootConfig,
-  ...{
+  ...rootConfig, ...{
     rootDir: root,
     displayName: "end2end-tests",
     setupFilesAfterEnv: ["<rootDir>/test/jest-setup.ts"],
