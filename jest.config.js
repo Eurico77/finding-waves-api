@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 import { resolve } from 'path';
+
 const root = resolve(__dirname);
 module.exports = {
   rootDir: root,

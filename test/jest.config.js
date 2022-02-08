@@ -3,7 +3,7 @@ import { resolve } from 'path';
 const root = resolve(__dirname, '..');
 const rootConfig = `${root}/jest.config.js`;
 
-export default {
+module.exports = {
   ...rootConfig,
   ...{
     rootDir: root,
