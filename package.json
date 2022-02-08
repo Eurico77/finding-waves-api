@@ -8,7 +8,7 @@
     "start:dev": "ts-node src/index.ts --transpileOnly --ignore node_modules",
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' test/**/*.ts --write",
     "test:functional": "jest --projects ./test/ --runInBand ",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
