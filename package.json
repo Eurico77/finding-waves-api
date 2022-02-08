@@ -9,9 +9,15 @@
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "test:functional": "jest --projects ./test/ --runInBand ",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "typescript",
+    "node",
+    "api"
+  ],
   "repository": "git@github.com:Eurico77/finding-waves-api.git",
   "author": "EuricoMagalhães <euricomagalhaes61@gmail.com>",
   "license": "MIT",
