@@ -10,6 +10,7 @@
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' test/**/*.ts --write",
     "test:functional": "jest --projects ./test/ --runInBand ",
+    "test:unit": "jest",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,11 +24,13 @@
   "license": "MIT",
   "dependencies": {
     "@overnightjs/core": "^1.7.6",
+    "axios": "^0.25.0",
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
     "module-alias": "^2.2.2"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.4.0",
     "@types/module-alias": "^2.0.1",
